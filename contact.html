@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      #contact h2 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 42px;
+      }
+
+      form {
+        max-width: 420px;
+        margin: 50px auto;
+      }
+
+      .feedback-input {
+        color: black;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 5px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 2px solid #2462d3;
+        transition: all 0.3s;
+        padding: 13px;
+        margin-bottom: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        outline: 0;
+      }
+
+      .feedback-input:focus {
+        border: 2px solid #2461d3ca;
+      }
+
+      textarea {
+        height: 150px;
+        line-height: 150%;
+        resize: vertical;
+      }
+
+      [type="submit"] {
+        width: 100%;
+        background: #2462d3;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
+      }
+      [type="submit"]:hover {
+        background: #2461d3ca;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="./index.html">FastHosting</a></h1>
+
+      <nav class="main-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#pricing">Hosting</a></li>
+          <li><a href="./domains.html">Domain</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <!-- <img src="images/india.png" alt="" height="36" id="cc3" /> -->
+        <div id="cc"></div>
+
+        <button class="signup">Log In</button>
+      </nav>
+    </header>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form
+        name="contactform"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+      >
+        <input
+          name="Name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          name="Email"
+          type="text"
+          class="feedback-input"
+          placeholder="Email"
+        />
+        <input
+          name="mobilenumber"
+          type="number"
+          class="feedback-input"
+          placeholder="Phone Number"
+        />
+
+        <select
+          type="text"
+          value=""
+          name="Destination"
+          class="feedback-input"
+          placeholder="Phone Number"
+          required
+        >
+          <option>Select Query</option>
+          <option>Hosting Related</option>
+          <option>Domain Related</option>
+        </select>
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Query"
+        ></textarea>
+
+        <div data-netlify-recaptcha="true"></div>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="ft-container ft-grid grid--footer">
+        <div class="logo-col">
+          <h3 class="footer-heading">Follow Us on Social Media</h3>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-2x fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-2x fa-twitter"></i
+          ></a>
+          <a href="https://youtube.com" target="_blank">
+            <i class="fa-brands fa-2x fa-youtube"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-2x fa-instagram"></i
+          ></a>
+
+          <p class="copyright">Copyright &copy; 2021 by FastHosting</p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">28/2 Naya Raipur, Chhattisgarh</p>
+            <p>
+              <a class="footer-link" href="tel:9340888888">9340888888</a><br />
+              <a class="footer-link" href="mailto:hello@fasthosting.com"
+                >hello@fasthosting.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Pricing </a></li>
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
